@@ -23,6 +23,34 @@
 	else {
 		alert('Dont you know? It is ECMAScript!');
 	}
+
+	var value = prompt('Put the number', 0);
+	if (value > 0) {
+		alert('1');
+	}
+	else if (value < 0) {
+		alert('-1');
+	}
+	else {
+		alert(0);
+	}
+
+	var admin = prompt('Who is here?', '');
+	if (admin == 'Admin') {
+		var pass = prompt ('Enter the Password', '');
+		if (pass == '1234') {
+			alert('Welcome to the website!');
+		}
+		else if (pass == null) {
+			alert('Return to the main page!');
+		}
+		else {
+			alert('Incorrect Password');
+		}
+	}
+	else {
+		alert ("I don't know you!");
+	}
 </script>
 
 </body>
