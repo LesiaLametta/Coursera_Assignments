@@ -31,7 +31,7 @@ for (var i = 0; i < 5; ++i) alert( i ); //префиксная форма
 
 
 for (var i = 2; i<= 10; i++) {
-	if(i % 2 ==0){
+	if(i % 2 == 0){
 		alert(i);
 	}
 } //вывод четного числа(showing even numbers)
@@ -48,6 +48,16 @@ while(i < 3) {
 	alert( "номер " + i + "!" );
 	i++;
 }
+
+
+var num;
+do {
+	num = prompt('Enter a number bigger than a hundred', 0);
+} while(num <= 100 && num != null);
+//Проверка num <= 100 – то есть, введённое число всё еще меньше 100.
+//Проверка num != null – значение null означает, что посетитель нажал «Отмена», в этом случае цикл тоже нужно прекратить.
+
+
 
 </script>
 
